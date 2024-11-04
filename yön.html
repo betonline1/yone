@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönlendirme</title>
+    <script>
+        window.onload = function() {
+            
+            var isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+            if (isMobile) {
+                
+                window.location.href = "https://www.facebook.com";
+            } else {
+                
+                window.location.href = "https://www.google.com";
+            }
+        };
+    </script>
+</head>
+<body>
+    <p>Yönlendiriliyorsunuz...</p>
+</body>
+</html>
